@@ -1,0 +1,18 @@
+body {
+    background-color: #f8f9fa;
+}
+.news-container {
+    margin-top: 20px;
+}
+.news-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.news-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.news-card-body {
+    padding: 20px;
+}
