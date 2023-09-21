@@ -2,7 +2,7 @@ body {
     background-color: #f8f9fa;
 }
 .news-container {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .news-card {
     background-color: #fff;
@@ -15,4 +15,15 @@ body {
 }
 .news-card-body {
     padding: 20px;
+}
+.col-md-4 {
+    margin-top: 25px;
+    margin-down: 25px;
+}
+.footer{
+
+    background: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
