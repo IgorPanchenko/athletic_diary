@@ -14,5 +14,6 @@
     <input type="hidden" name="next" value="{{ next }}">
     {% buttons submit='Войти' %} {% endbuttons%}
 </form>
+<a href="{% url 'users:password_reset' %}">сброс пароля</a>
 {% endif %}
 {% endblock %}

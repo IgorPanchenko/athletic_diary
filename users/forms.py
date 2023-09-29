@@ -3,6 +3,7 @@ from django.contrib.auth import password_validation
 from django.core.exceptions import ValidationError
 from phonenumber_field.formfields import PhoneNumberField
 
+from users.apps import user_registered
 from users.models import AdvUser
 
 

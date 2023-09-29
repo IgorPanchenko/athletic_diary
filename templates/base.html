@@ -27,18 +27,18 @@
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                    aria-expanded="false">Личный кабинет</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Профиль</a>
-                    <a class="dropdown-item" href="#">Сменить пароль</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="{% url 'users:profile1' %}">Профиль</a>
+                    <a class="dropdown-item" href="{% url 'users:password_change' %}">Сменить пароль</a>
+                    <a class="dropdown-item" href="{% url 'users:profile_delete' %}">Удалить аккаунт</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Выйти</a>
+                    <a class="dropdown-item" href="{% url 'users:logout' %}">Выйти</a>
                 </div>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Вход</a>
+                    <a class="nav-link" href="{% url 'users:login' %}">Вход</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Регистрация</a>
+                    <a class="nav-link" href="{% url 'users:register' %}">Регистрация</a>
                 </li>
             {% endif %}
             </li>

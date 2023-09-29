@@ -23,8 +23,8 @@ from django.views.decorators.cache import never_cache
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("news/", include('news.urls')),
-    path("/", include('users.urls')),
+    path("", include('news.urls')),
+    path("", include('users.urls')),
 ]
 
 if settings.DEBUG:
