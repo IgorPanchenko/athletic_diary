@@ -37,10 +37,12 @@ INSTALLED_APPS = [
 
     "bootstrap4",
     "phonenumber_field",
+    "rest_framework",
 
     "news",
     "diary",
     "users",
+    "api",
 ]
 
 MIDDLEWARE = [
@@ -123,6 +125,7 @@ USE_TZ = True
 
 
 AUTH_USER_MODEL = "users.AdvUser"
+
 LOGIN_REDIRECT_URL = "/"
 
 

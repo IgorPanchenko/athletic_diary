@@ -4,7 +4,8 @@
 {% block title %}Вход
 {% endblock %}
 {% block content %}
-<h2>Вход</h2>
+<div class="container">
+    <h2>Вход</h2>
 {% if user.is_authenticated %}
 <p>Вы уже выполнили вход</p>
 {% else %}
@@ -16,4 +17,6 @@
 </form>
 <a href="{% url 'users:password_reset' %}">сброс пароля</a>
 {% endif %}
+</div>
+
 {% endblock %}

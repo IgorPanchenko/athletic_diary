@@ -8,8 +8,8 @@ from users.models import AdvUser
 
 
 class ChangeUserInfoForm(forms.ModelForm):
-    email = forms.EmailField(required=True, label='Адрес электронной почты')
-
+    email = forms.CharField(required=True, label='Адрес электронной почты',widget=forms.TextInput(attrs={'readonly': True}))
+    phone_number = PhoneNumberField(region='RU')
     class Meta:
         model = AdvUser
         fields = ('email', 'phone_number', 'first_name', 'last_name', 'send_message')

@@ -6,6 +6,10 @@
 {% block title %}Профиль
 {% endblock %}
 {% block content %}
-<h1>Профиль</h1>
+<div class="container">
+    <h1>Профиль</h1>
 {{ user.email }}
+    <a href="{% url 'users:profile_change' %}">Изменить данные</a>
+</div>
+
 {%endblock%}

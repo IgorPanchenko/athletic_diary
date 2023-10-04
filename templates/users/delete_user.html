@@ -3,10 +3,14 @@
 
 {% block title %}Удаление пользователя
 {% endblock %}
-{% block content%}<h2>Удаление пользователя {{ object.first_name }}</h2>
+{% block content%}
+<div class="container">
+    <h2>Удаление пользователя {{ object.first_name }}</h2>
 <form method="post">
     {% csrf_token %}
     {% bootstrap_form form layout='horizontal' %}
     {% buttons submit='Удалить' %} {% endbuttons %}
 </form>
+</div>
+
 {% endblock %}

@@ -3,10 +3,15 @@
 
 {% block title %} Изменить личные данные
 {% endblock %}
-{% block content%}<h2>Правка личных данных пользователя {{ user.first_name }}</h2>
+{% block content%}
+<div class="container">
+    <h2>Правка личных данных пользователя {{ user.first_name }}</h2>
+    <hr>
 <form method="post">
     {% csrf_token %}
     {% bootstrap_form form layout='horizontal' %}
     {% buttons submit='Сохранить' %} {% endbuttons%}
 </form>
+</div>
+
 {% endblock %}
